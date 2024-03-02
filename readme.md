@@ -13,3 +13,4 @@
 1. [Constants](./04.constants/)
 1. [`for` Loops](./05.for-loops/)
 1. [`if`-`else`](./06.if-else/)
+1. [`switch`](./07.switch/)
