@@ -33,13 +33,13 @@ func multiply3(x, y, z int64) int64 {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 12.functions\src\main.go
-//	To compile:				go build -o 12.functions\bin\functions.exe 12.functions\src\main.go
-//	To run after compile:	.\12.functions\bin\functions.exe
-//	Compile + Run:			go build -o 12.functions\bin\functions.exe 12.functions\src\main.go && .\12.functions\bin\functions.exe
+//  To run:                 go run 12.functions\src\main.go
+//  To compile:             go build -o 12.functions\bin\functions.exe 12.functions\src\main.go
+//  To run after compile:   .\12.functions\bin\functions.exe
+//  Compile + Run:          go build -o 12.functions\bin\functions.exe 12.functions\src\main.go && .\12.functions\bin\functions.exe
 
 // FOR LINUX:
-//	To run:					go run 12.functions/src/main.go
-//	To compile:				go build -o 12.functions/bin/functions 12.functions/src/main.go
-//	To run after compile:	./12.functions/bin/functions
-//	Compile + Run:			go build -o 12.functions/bin/functions 12.functions/src/main.go && ./12.functions/bin/functions
+//  To run:                 go run 12.functions/src/main.go
+//  To compile:             go build -o 12.functions/bin/functions 12.functions/src/main.go
+//  To run after compile:   ./12.functions/bin/functions
+//  Compile + Run:          go build -o 12.functions/bin/functions 12.functions/src/main.go && ./12.functions/bin/functions

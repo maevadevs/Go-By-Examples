@@ -32,13 +32,13 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 02.types\src\main.go
-//	To compile:				go build -o 02.types\bin\types.exe 02.types\src\main.go
-//	To run after compile:	.\02.types\bin\types.exe
-//	Compile + Run:			go build -o 02.types\bin\types.exe 02.types\src\main.go && .\02.types\bin\types.exe
+//  To run:                 go run 02.types\src\main.go
+//  To compile:             go build -o 02.types\bin\types.exe 02.types\src\main.go
+//  To run after compile:   .\02.types\bin\types.exe
+//  Compile + Run:          go build -o 02.types\bin\types.exe 02.types\src\main.go && .\02.types\bin\types.exe
 
 // FOR LINUX:
-//	To run:					go run 02.types/src/main.go
-//	To compile:				go build -o 02.types/bin/types 02.types/src/main.go
-//	To run after compile:	./02.types/bin/types
-//	Compile + Run:			go build -o 02.types/bin/types 02.types/src/main.go && ./02.types/bin/types
+//  To run:                 go run 02.types/src/main.go
+//  To compile:             go build -o 02.types/bin/types 02.types/src/main.go
+//  To run after compile:   ./02.types/bin/types
+//  Compile + Run:          go build -o 02.types/bin/types 02.types/src/main.go && ./02.types/bin/types

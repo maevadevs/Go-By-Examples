@@ -42,13 +42,13 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 11.range\src\main.go
-//	To compile:				go build -o 11.range\bin\range.exe 11.range\src\main.go
-//	To run after compile:	.\11.range\bin\range.exe
-//	Compile + Run:			go build -o 11.range\bin\range.exe 11.range\src\main.go && .\11.range\bin\range.exe
+//  To run:                 go run 11.range\src\main.go
+//  To compile:             go build -o 11.range\bin\range.exe 11.range\src\main.go
+//  To run after compile:   .\11.range\bin\range.exe
+//  Compile + Run:          go build -o 11.range\bin\range.exe 11.range\src\main.go && .\11.range\bin\range.exe
 
 // FOR LINUX:
-//	To run:					go run 11.range/src/main.go
-//	To compile:				go build -o 11.range/bin/range 11.range/src/main.go
-//	To run after compile:	./11.range/bin/range
-//	Compile + Run:			go build -o 11.range/bin/range 11.range/src/main.go && ./11.range/bin/range
+//  To run:                 go run 11.range/src/main.go
+//  To compile:             go build -o 11.range/bin/range 11.range/src/main.go
+//  To run after compile:   ./11.range/bin/range
+//  Compile + Run:          go build -o 11.range/bin/range 11.range/src/main.go && ./11.range/bin/range

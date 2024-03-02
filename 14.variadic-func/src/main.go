@@ -45,13 +45,13 @@ func avg(nums ...float64) float64 {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 14.variadic-func\src\main.go
-//	To compile:				go build -o 14.variadic-func\bin\variadic-func.exe 14.variadic-func\src\main.go
-//	To run after compile:	.\14.variadic-func\bin\variadic-func.exe
-//	Compile + Run:			go build -o 14.variadic-func\bin\variadic-func.exe 14.variadic-func\src\main.go && .\14.variadic-func\bin\variadic-func.exe
+//  To run:                 go run 14.variadic-func\src\main.go
+//  To compile:             go build -o 14.variadic-func\bin\variadic-func.exe 14.variadic-func\src\main.go
+//  To run after compile:   .\14.variadic-func\bin\variadic-func.exe
+//  Compile + Run:          go build -o 14.variadic-func\bin\variadic-func.exe 14.variadic-func\src\main.go && .\14.variadic-func\bin\variadic-func.exe
 
 // FOR LINUX:
-//	To run:					go run 14.variadic-func/src/main.go
-//	To compile:				go build -o 14.variadic-func/bin/variadic-func 14.variadic-func/src/main.go
-//	To run after compile:	./14.variadic-func/bin/variadic-func
-//	Compile + Run:			go build -o 14.variadic-func/bin/variadic-func 14.variadic-func/src/main.go && ./14.variadic-func/bin/variadic-func
+//  To run:                 go run 14.variadic-func/src/main.go
+//  To compile:             go build -o 14.variadic-func/bin/variadic-func 14.variadic-func/src/main.go
+//  To run after compile:   ./14.variadic-func/bin/variadic-func
+//  Compile + Run:          go build -o 14.variadic-func/bin/variadic-func 14.variadic-func/src/main.go && ./14.variadic-func/bin/variadic-func

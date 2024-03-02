@@ -90,18 +90,18 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run $PROJECT_NAME\src\main.go
-//	To compile:				go build -o $PROJECT_NAME\bin\\$OUT_FILE.exe $PROJECT_NAME\src\main.go
-//	To run after compile:	.\\$PROJECT_NAME\bin\\$OUT_FILE.exe
-//	Compile + Run:			go build -o $PROJECT_NAME\bin\\$OUT_FILE.exe $PROJECT_NAME\src\main.go && .\\$PROJECT_NAME\bin\\$OUT_FILE.exe
+//  To run:                 go run $PROJECT_NAME\src\main.go
+//  To compile:             go build -o $PROJECT_NAME\bin\\$OUT_FILE.exe $PROJECT_NAME\src\main.go
+//  To run after compile:   .\\$PROJECT_NAME\bin\\$OUT_FILE.exe
+//  Compile + Run:          go build -o $PROJECT_NAME\bin\\$OUT_FILE.exe $PROJECT_NAME\src\main.go && .\\$PROJECT_NAME\bin\\$OUT_FILE.exe
 
 // FOR LINUX:
-//	To run:					go run $PROJECT_NAME/src/main.go
-//	To compile:				go build -o $PROJECT_NAME/bin/$OUT_FILE $PROJECT_NAME/src/main.go
-//	To run after compile:	./$PROJECT_NAME/bin/$OUT_FILE
-//	Compile + Run:			go build -o $PROJECT_NAME/bin/$OUT_FILE $PROJECT_NAME/src/main.go && ./$PROJECT_NAME/bin/$OUT_FILE
+//  To run:                 go run $PROJECT_NAME/src/main.go
+//  To compile:             go build -o $PROJECT_NAME/bin/$OUT_FILE $PROJECT_NAME/src/main.go
+//  To run after compile:   ./$PROJECT_NAME/bin/$OUT_FILE
+//  Compile + Run:          go build -o $PROJECT_NAME/bin/$OUT_FILE $PROJECT_NAME/src/main.go && ./$PROJECT_NAME/bin/$OUT_FILE
 
-    " >> src/main.go;
+" >> src/main.go;
 
     echo "Done."
     echo "";

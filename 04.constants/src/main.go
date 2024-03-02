@@ -42,13 +42,13 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 04.constants\src\main.go
-//	To compile:				go build -o 04.constants\bin\constants.exe 04.constants\src\main.go
-//	To run after compile:	.\04.constants\bin\constants.exe
-//	Compile + Run:			go build -o 04.constants\bin\constants.exe 04.constants\src\main.go && .\04.constants\bin\constants.exe
+//  To run:                 go run 04.constants\src\main.go
+//  To compile:             go build -o 04.constants\bin\constants.exe 04.constants\src\main.go
+//  To run after compile:   .\04.constants\bin\constants.exe
+//  Compile + Run:          go build -o 04.constants\bin\constants.exe 04.constants\src\main.go && .\04.constants\bin\constants.exe
 
 // FOR LINUX:
-//	To run:					go run 04.constants/src/main.go
-//	To compile:				go build -o 04.constants/bin/constants 04.constants/src/main.go
-//	To run after compile:	./04.constants/bin/constants
-//	Compile + Run:			go build -o 04.constants/bin/constants 04.constants/src/main.go && ./04.constants/bin/constants
+//  To run:                 go run 04.constants/src/main.go
+//  To compile:             go build -o 04.constants/bin/constants 04.constants/src/main.go
+//  To run after compile:   ./04.constants/bin/constants
+//  Compile + Run:          go build -o 04.constants/bin/constants 04.constants/src/main.go && ./04.constants/bin/constants

@@ -75,13 +75,13 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 10.maps\src\main.go
-//	To compile:				go build -o 10.maps\bin\maps.exe 10.maps\src\main.go
-//	To run after compile:	.\10.maps\bin\maps.exe
-//	Compile + Run:			go build -o 10.maps\bin\maps.exe 10.maps\src\main.go && .\10.maps\bin\maps.exe
+//  To run:                 go run 10.maps\src\main.go
+//  To compile:             go build -o 10.maps\bin\maps.exe 10.maps\src\main.go
+//  To run after compile:   .\10.maps\bin\maps.exe
+//  Compile + Run:          go build -o 10.maps\bin\maps.exe 10.maps\src\main.go && .\10.maps\bin\maps.exe
 
 // FOR LINUX:
-//	To run:					go run 10.maps/src/main.go
-//	To compile:				go build -o 10.maps/bin/maps 10.maps/src/main.go
-//	To run after compile:	./10.maps/bin/maps
-//	Compile + Run:			go build -o 10.maps/bin/maps 10.maps/src/main.go && ./10.maps/bin/maps
+//  To run:                 go run 10.maps/src/main.go
+//  To compile:             go build -o 10.maps/bin/maps 10.maps/src/main.go
+//  To run after compile:   ./10.maps/bin/maps
+//  Compile + Run:          go build -o 10.maps/bin/maps 10.maps/src/main.go && ./10.maps/bin/maps

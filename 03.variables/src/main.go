@@ -31,7 +31,7 @@ func main() {
 	fmt.Println("Count is", count)
 
 	// Type can be skipped and infered if provided during declaration
-    // However, we could loose track of the type of the variable
+	// However, we could loose track of the type of the variable
 	isHuman := true
 	fmt.Println("Is he human?", isHuman)
 
@@ -46,13 +46,13 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 03.variables\src\main.go
-//	To compile:				go build -o 03.variables\bin\variables.exe 03.variables\src\main.go
-//	To run after compile:	.\03.variables\bin\variables.exe
-//	Compile + Run:			go build -o 03.variables\bin\variables.exe 03.variables\src\main.go && .\03.variables\bin\variables.exe
+//  To run:                 go run 03.variables\src\main.go
+//  To compile:             go build -o 03.variables\bin\variables.exe 03.variables\src\main.go
+//  To run after compile:   .\03.variables\bin\variables.exe
+//  Compile + Run:          go build -o 03.variables\bin\variables.exe 03.variables\src\main.go && .\03.variables\bin\variables.exe
 
 // FOR LINUX:
-//	To run:					go run 03.variables/src/main.go
-//	To compile:				go build -o 03.variables/bin/variables 03.variables/src/main.go
-//	To run after compile:	./03.variables/bin/variables
-//	Compile + Run:			go build -o 03.variables/bin/variables 03.variables/src/main.go && ./03.variables/bin/variables
+//  To run:                 go run 03.variables/src/main.go
+//  To compile:             go build -o 03.variables/bin/variables 03.variables/src/main.go
+//  To run after compile:   ./03.variables/bin/variables
+//  Compile + Run:          go build -o 03.variables/bin/variables 03.variables/src/main.go && ./03.variables/bin/variables

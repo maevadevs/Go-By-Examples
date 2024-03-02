@@ -41,13 +41,13 @@ func factorial(n int) int {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 16.recursion\src\main.go
-//	To compile:				go build -o 16.recursion\bin\recursion.exe 16.recursion\src\main.go
-//	To run after compile:	.\16.recursion\bin\recursion.exe
-//	Compile + Run:			go build -o 16.recursion\bin\recursion.exe 16.recursion\src\main.go && .\16.recursion\bin\recursion.exe
+//  To run:                 go run 16.recursion\src\main.go
+//  To compile:             go build -o 16.recursion\bin\recursion.exe 16.recursion\src\main.go
+//  To run after compile:   .\16.recursion\bin\recursion.exe
+//  Compile + Run:          go build -o 16.recursion\bin\recursion.exe 16.recursion\src\main.go && .\16.recursion\bin\recursion.exe
 
 // FOR LINUX:
-//	To run:					go run 16.recursion/src/main.go
-//	To compile:				go build -o 16.recursion/bin/recursion 16.recursion/src/main.go
-//	To run after compile:	./16.recursion/bin/recursion
-//	Compile + Run:			go build -o 16.recursion/bin/recursion 16.recursion/src/main.go && ./16.recursion/bin/recursion
+//  To run:                 go run 16.recursion/src/main.go
+//  To compile:             go build -o 16.recursion/bin/recursion 16.recursion/src/main.go
+//  To run after compile:   ./16.recursion/bin/recursion
+//  Compile + Run:          go build -o 16.recursion/bin/recursion 16.recursion/src/main.go && ./16.recursion/bin/recursion

@@ -88,13 +88,13 @@ func main() {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 09.slices\src\main.go
-//	To compile:				go build -o 09.slices\bin\slices.exe 09.slices\src\main.go
-//	To run after compile:	.\09.slices\bin\slices.exe
-//	Compile + Run:			go build -o 09.slices\bin\slices.exe 09.slices\src\main.go && .\09.slices\bin\slices.exe
+//  To run:                 go run 09.slices\src\main.go
+//  To compile:             go build -o 09.slices\bin\slices.exe 09.slices\src\main.go
+//  To run after compile:   .\09.slices\bin\slices.exe
+//  Compile + Run:          go build -o 09.slices\bin\slices.exe 09.slices\src\main.go && .\09.slices\bin\slices.exe
 
 // FOR LINUX:
-//	To run:					go run 09.slices/src/main.go
-//	To compile:				go build -o 09.slices/bin/slices 09.slices/src/main.go
-//	To run after compile:	./09.slices/bin/slices
-//	Compile + Run:			go build -o 09.slices/bin/slices 09.slices/src/main.go && ./09.slices/bin/slices
+//  To run:                 go run 09.slices/src/main.go
+//  To compile:             go build -o 09.slices/bin/slices 09.slices/src/main.go
+//  To run after compile:   ./09.slices/bin/slices
+//  Compile + Run:          go build -o 09.slices/bin/slices 09.slices/src/main.go && ./09.slices/bin/slices

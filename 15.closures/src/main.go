@@ -38,13 +38,13 @@ func intSeq() func() int {
 }
 
 // FOR WINDOWS:
-//	To run:					go run 15.closures\src\main.go
-//	To compile:				go build -o 15.closures\bin\closures.exe 15.closures\src\main.go
-//	To run after compile:	.\15.closures\bin\closures.exe
-//	Compile + Run:			go build -o 15.closures\bin\closures.exe 15.closures\src\main.go && .\15.closures\bin\closures.exe
+//  To run:                 go run 15.closures\src\main.go
+//  To compile:             go build -o 15.closures\bin\closures.exe 15.closures\src\main.go
+//  To run after compile:   .\15.closures\bin\closures.exe
+//  Compile + Run:          go build -o 15.closures\bin\closures.exe 15.closures\src\main.go && .\15.closures\bin\closures.exe
 
 // FOR LINUX:
-//	To run:					go run 15.closures/src/main.go
-//	To compile:				go build -o 15.closures/bin/closures 15.closures/src/main.go
-//	To run after compile:	./15.closures/bin/closures
-//	Compile + Run:			go build -o 15.closures/bin/closures 15.closures/src/main.go && ./15.closures/bin/closures
+//  To run:                 go run 15.closures/src/main.go
+//  To compile:             go build -o 15.closures/bin/closures 15.closures/src/main.go
+//  To run after compile:   ./15.closures/bin/closures
+//  Compile + Run:          go build -o 15.closures/bin/closures 15.closures/src/main.go && ./15.closures/bin/closures
