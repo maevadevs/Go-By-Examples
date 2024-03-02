@@ -14,3 +14,4 @@
 1. [`for` Loops](./05.for-loops/)
 1. [`if`-`else`](./06.if-else/)
 1. [`switch`](./07.switch/)
+1. [Arrays](./08.arrays/)
