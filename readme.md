@@ -17,3 +17,4 @@
 1. [Arrays](./08.arrays/)
 1. [Slices](./09.slices/)
 1. [Maps](./10.maps/)
+1. [Range](./11.range)
