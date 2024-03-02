@@ -16,3 +16,4 @@
 1. [`switch`](./07.switch/)
 1. [Arrays](./08.arrays/)
 1. [Slices](./09.slices/)
+1. [Maps](./10.maps/)
