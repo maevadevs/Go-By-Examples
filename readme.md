@@ -15,3 +15,4 @@
 1. [`if`-`else`](./06.if-else/)
 1. [`switch`](./07.switch/)
 1. [Arrays](./08.arrays/)
+1. [Slices](./09.slices/)
