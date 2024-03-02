@@ -21,3 +21,4 @@
 1. [Functions](./12.functions/)
 1. [Multiple Returns](./13.multiple-returns/)
 1. [Variadic Funtions](./14.variadic-func/)
+1. [Closures](./15.closures/)
