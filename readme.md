@@ -8,3 +8,4 @@
 ## List of Examples
 
 1. [Hello World](./01.hello-world/)
+1. [Types](./02.types/)
