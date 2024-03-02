@@ -23,3 +23,4 @@
 1. [Variadic Funtions](./14.variadic-func/)
 1. [Closures](./15.closures/)
 1. [Recursion](./16.recursion/)
+1. [Pointers](./17.pointers/)
