@@ -18,3 +18,4 @@
 1. [Slices](./09.slices/)
 1. [Maps](./10.maps/)
 1. [Range](./11.range)
+1. [Functions](./12.functions/)
