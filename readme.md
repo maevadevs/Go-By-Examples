@@ -20,3 +20,4 @@
 1. [Range](./11.range)
 1. [Functions](./12.functions/)
 1. [Multiple Returns](./13.multiple-returns/)
+1. [Variadic Funtions](./14.variadic-func/)
