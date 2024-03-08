@@ -25,3 +25,4 @@
 1. [Recursion](./16.recursion/)
 1. [Pointers](./17.pointers/)
 1. [Strings and Runes](./18.strings-runes/)
+1. [Structs](./19.structs/)
