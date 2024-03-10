@@ -1,3 +1,3 @@
 module ralafi.com/go/go-by-examples/07.switch
-go 1.22.0
 
+go 1.22.0
