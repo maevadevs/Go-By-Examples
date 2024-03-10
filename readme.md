@@ -27,3 +27,4 @@
 1. [Strings and Runes](./18.strings-runes/)
 1. [Structs](./19.structs/)
 1. [Methods](./20.methods/)
+1. [Interfaces](./21.interfaces/)
