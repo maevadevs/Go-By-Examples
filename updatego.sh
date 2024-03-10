@@ -1,3 +1,11 @@
+#!/bin/bash
+
+######################################################################################
+# SCRIPT:       Allow to quickly update go version in go.work and go.mod to system   #
+# CALL SIGN:    bash updatego.sh                                                     #
+# CALL EXAMPLE: bash updatego.sh                                                     #
+######################################################################################
+
 # Get Current Directory
 CURRENT_DIR=$PWD;
 
