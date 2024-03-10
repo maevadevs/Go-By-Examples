@@ -28,3 +28,4 @@
 1. [Structs](./19.structs/)
 1. [Methods](./20.methods/)
 1. [Interfaces](./21.interfaces/)
+1. [Struct Embedding](./22.struct-embedding/)
