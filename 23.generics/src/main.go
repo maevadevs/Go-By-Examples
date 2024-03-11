@@ -11,15 +11,15 @@ import "fmt"
 // Starting with version 1.18, Go added support for generics
 // Also known as type parameters
 
-// List is a singly-linked list with values of any type stored in a Node
-type List[T any] struct {
-	head, tail *Node[T]
-}
-
-// Node is a struct container that can take any type of value and point to another Node
+// Node is a struct container that can take any type of value and point to another Node.
 type Node[T any] struct {
 	next *Node[T]
 	val  T
+}
+
+// List is a singly-linked list with values of any type stored in a Node.
+type List[T any] struct {
+	head, tail *Node[T]
 }
 
 // Receiver Functions
@@ -31,24 +31,24 @@ type Node[T any] struct {
 // Receiver function to add a new element into the linked list.
 func (lst *List[T]) Push(value T) {
 	if lst.tail == nil {
-		// The list is empty
+		// The list is empty: Start from head
 		lst.head = &Node[T]{val: value}
 		lst.tail = lst.head
 	} else {
-		// The list is not empty
+		// The list is not empty: Append a new Node at the tail
 		lst.tail.next = &Node[T]{val: value}
 		lst.tail = lst.tail.next
 	}
 }
 
-// Receiver function to get all element in the linked list
+// Receiver function to get all element in the linked list.
 func (lst *List[T]) GetAll() []T {
-	// A slice of elements
+	// A slice of elements of whatever type in the list
 	var elems []T
 
 	// Append all the elements of the linked list to the slice
-	for e := lst.head; e != nil; e = e.next {
-		elems = append(elems, e.val)
+	for el := lst.head; el != nil; el = el.next {
+		elems = append(elems, el.val)
 	}
 
 	// Return the slice
@@ -78,6 +78,9 @@ func MapKeys[K comparable, V any](m map[K]V) []K {
 	// Return
 	return r
 }
+
+// main
+// ****
 
 func main() {
 	m := map[int]string{1: "2", 2: "4", 4: "8"}

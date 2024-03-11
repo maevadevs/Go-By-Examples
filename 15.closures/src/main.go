@@ -8,8 +8,28 @@ import "fmt"
 
 // Functions
 // *********
+// Go supports anonymous function, which can be used as closures
+// We can return a function as a value of another function
+
+// Return a closure function that returns an incrementing integer.
+func intSeq() func() int {
+	// Declaring a variable
+	i := 0
+
+	// This returned anonymous function is an enclosure for i
+	// i exists and is accessed in this context created by intSeq()
+	// Allows intSeq() to maintain its own copy of i across different executions of the closure
+	return func() int {
+		i++
+		return i
+	}
+}
+
+// main
+// ****
+
 func main() {
-	// Go supports anonymous function, which can be used as closures
+	// Variable as a closure function
 	var nextIntGen func() int = intSeq()
 
 	fmt.Println("nextIntGen", nextIntGen())
@@ -23,18 +43,6 @@ func main() {
 	fmt.Println("anotherIntGen", anotherIntGen())
 
 	fmt.Println("nextIntGen", nextIntGen())
-}
-
-// Return a closure function that returns an incrementing integer.
-func intSeq() func() int {
-	i := 0
-	// This returned anonymous function is an enclosure for i
-	// i exist and is accessed in this context create by intSeq()
-	// Allows intSeq() to maintain its own copy of i across different executions of the closure
-	return func() int {
-		i++
-		return i
-	}
 }
 
 // FOR WINDOWS:

@@ -2,34 +2,28 @@
 // *******
 package main
 
+// Imports
+// *******
 import (
 	"fmt"
 )
 
-// Imports
-// *******
-
 // Functions
 // *********
-func main() {
-	// Variadic - Functions that accept any number of arguments
-	// We can call them with any length of arguments
-	var summed int64 = sum(1, 2, 3, 4, 5, 6, 7, 8, 9)
-	fmt.Printf("Sum: %v\n", summed)
+// Variadic - Functions that accept any number of arguments
+// We can call them with any length of arguments
+// We can also call them with slice/array using a spread-like operator
+// The multiple arguments are captured in a slice of the same type
 
-	// We can also call them with slice/array using a spread-like operator
-	nums := []float64{189, 251, 327, 492}
-	var averaged float64 = avg(nums...)
-	fmt.Printf("Avg: %v\n", averaged)
-}
-
-// A variadic function to sum an arbitrary number of int arguments.
+// A variadic function to sum an arbitrary number of integer arguments.
 func sum(nums ...int64) int64 {
 	// Here, the type of nums is equivalent to []int64
 	var total int64 = 0
+
 	for _, num := range nums {
 		total += num
 	}
+
 	return total
 }
 
@@ -38,10 +32,29 @@ func avg(nums ...float64) float64 {
 	// Here, the type of nums is equivalent to []float64
 	var length float64 = float64(len(nums))
 	var total float64 = 0
+
 	for _, num := range nums {
 		total += num
 	}
+
 	return total / length
+}
+
+// main
+// ****
+
+func main() {
+	// Variadic are functions that accept any number of arguments
+	// We can call them with any length of arguments
+	var summed int64 = sum(1, 2, 3, 4, 5, 6, 7, 8, 9)
+
+	fmt.Printf("Sum: %v\n", summed)
+
+	// We can also call them with slice/array using a spread-like operator
+	nums := []float64{189, 251, 327, 492}
+	var averaged float64 = avg(nums...)
+    
+	fmt.Printf("Avg: %v\n", averaged)
 }
 
 // FOR WINDOWS:

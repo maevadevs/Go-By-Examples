@@ -9,6 +9,22 @@ import (
 	"fmt"
 )
 
+// Types
+// *****
+// It is possible to use custom types as errors by implementing the Error() method on them
+// Here’s a variant on the example above that uses a custom type argError to explicitly
+// represent an argument error
+
+type argError struct {
+	arg  int
+	prob string
+}
+
+// Receiver Function for argError: argError.Error()
+func (err *argError) Error() string {
+	return fmt.Sprintf("%d - %s", err.arg, err.prob)
+}
+
 // Functions
 // *********
 // Errors in Go are an explicit separate return value
@@ -24,22 +40,6 @@ func funcWithError(arg int) (int, error) {
 	}
 	// A nil value in the error position indicates that there was no error
 	return arg + 3, nil
-}
-
-// Types
-// *****
-// It is possible to use custom types as errors by implementing the Error() method on them
-// Here’s a variant on the example above that uses a custom type argError to explicitly
-// represent an argument error
-
-type argError struct {
-	arg  int
-	prob string
-}
-
-// Receiver Function for argError: argError.Error()
-func (err *argError) Error() string {
-	return fmt.Sprintf("%d - %s", err.arg, err.prob)
 }
 
 func funcWithError2(arg int) (int, error) {

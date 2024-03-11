@@ -65,7 +65,7 @@ func main() {
 	newMap := map[string]int{"foo": 1, "bar": 2}
 	fmt.Println("newMap:", newMap)
 
-	// Use the "map" pkg for additional utilities
+	// Use the "maps" pkg for additional utilities
 	var anotherMap map[string]int = map[string]int{"foo": 1, "bar": 2}
 	if maps.Equal(newMap, anotherMap) {
 		fmt.Println("newMap == anotherMap")

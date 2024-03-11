@@ -8,15 +8,7 @@ import "fmt"
 
 // Functions
 // *********
-func main() {
-	// Functions are central pieces in Go
-	// After defining them, we can call a function as we would expect
-	sum := plus(54, 78)
-	mul := multiply3(4, 6, 2)
-
-	fmt.Println("plus(54, 78) =", sum)
-	fmt.Println("multiply3(4, 6, 2) =", mul)
-}
+// Functions are central pieces in Go
 
 // Takes 2 integers and returns their sum.
 func plus(x int64, y int64) int64 {
@@ -27,9 +19,21 @@ func plus(x int64, y int64) int64 {
 // we can omit the type name for the like-typed parameters
 // up to the final parameter that declares the type
 
-// Takes 3 parameters and returns their multiplication.
+// Takes 3 integers and returns their multiplication.
 func multiply3(x, y, z int64) int64 {
 	return x * y * z
+}
+
+// main
+// ****
+
+func main() {
+	// After defining function, we can call them as we would expect
+	sum := plus(54, 78)
+	mul := multiply3(4, 6, 2)
+
+	fmt.Println("plus(54, 78) =", sum)
+	fmt.Println("multiply3(4, 6, 2) =", mul)
 }
 
 // FOR WINDOWS:

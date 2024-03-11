@@ -15,15 +15,15 @@ func main() {
 	// Numbered sequence of elements of a dynamic length
 	// Dynamic-length
 
-	// An un-initialized array equals to nil and length 0
-	//  This does not allocate memory and the variable points to nil
+	// An un-initialized slice equals to nil and length 0
+	// This does not allocate memory and the variable points to nil
 	var uslice []string
 	fmt.Println("Un-initialized slice:", uslice, uslice == nil, len(uslice) == 0)
 
 	// Use `make()` to create an empty slice with non-zero length
-	//  By default, the capacity of a new slice is equal to its length
-	//  We can pass an initial length as well
-	//  This allocates memory and the variable points to memory to a slice with 0 elements
+	// By default, the capacity of a new slice is equal to its length
+	// We can pass an initial length as well
+	// This allocates memory and the variable points to memory to a slice with 0 elements
 	slc := make([]string, 3)
 	fmt.Println("emp:", slc, "len:", len(slc), "cap:", cap(slc))
 

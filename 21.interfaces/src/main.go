@@ -14,8 +14,9 @@ import (
 // **********
 // Named collections of method signatures
 // Acts like a "contract" with an object
-// Allows to specify what methods an object must implement
+// Allows to specify what Methods/Receiver Functions an object should have
 // But does not specify how they should be implemented
+
 type IGeometry interface {
 	area() float64
 	perim() float64
@@ -23,6 +24,7 @@ type IGeometry interface {
 
 // Structs
 // *******
+
 type rect struct {
 	width, height float64
 }
@@ -35,6 +37,7 @@ type circle struct {
 // ******************
 // To implement an interface in Go, we just need to implement all
 // the methods listed in the interface
+
 func (r rect) area() float64 {
 	return r.width * r.height
 }
@@ -55,12 +58,16 @@ func (c circle) perim() float64 {
 // *********
 // If a variable is an interface type, then we can call methods
 // that are in the named interface
+
 func measure(g IGeometry) {
 	fmt.Printf("Type: %s\n", reflect.TypeOf(g))
 	fmt.Println("Value:", g)
 	fmt.Println("Area:", g.area())
 	fmt.Println("Perimeter:", g.perim())
 }
+
+// main
+// ****
 
 func main() {
 	// The circle and rect struct types both implement the IGeometry interface

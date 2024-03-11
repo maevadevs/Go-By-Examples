@@ -39,6 +39,8 @@ func main() {
 	for bi, runeChar := range "go" {
 		fmt.Println(bi, runeChar)
 	}
+
+	// Check 18.strings-runes for more details on strings
 }
 
 // FOR WINDOWS:

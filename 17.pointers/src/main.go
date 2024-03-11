@@ -8,20 +8,22 @@ import "fmt"
 
 // Functions
 // *********
-
+// Pointers allow to pass references
 // Here we have 2 functions: zeroval and zeroptr
 
 // Arguments are passed to this function by value.
 func zeroval(ival int) {
-	// ival will be a value-copy, distinct from the passed argument
+	// In the function context, ival will be a value-copy,
+	// distinct from the passed argument itself
+	// Assigning a value to the parameter DOES NOT affect the original parameter
 	ival = 0
 }
 
-// Arguments will be passed to this function by pointer reference.
+// Arguments are passed to this function by pointer reference.
 func zeroptr(iptr *int) {
 	// iptr param is a pointer to the int value in memory
-	// *iptr dereference the pointer from its memory address to the current value at that address
-	// Assigning a value to a dereferenced pointer changes the value at the referenced address
+	// *iptr dereferences the pointer from its memory address to the current value at that address
+	// Assigning a value to a dereferenced pointer CHANGES the value at the referenced address (original parameter)
 	*iptr = 0
 }
 
@@ -35,7 +37,7 @@ func main() {
 	zeroval(i)
 	fmt.Println("zeroval:", i)
 
-	// &i gives the memory address of i, i.e. a pointer to i
+	// &i gives the memory address (reference) of i, i.e. a pointer to i
 	// Using zeroptr overwrites the variable
 	// Because we are manipulating the memory location itself
 	zeroptr(&i)
@@ -43,7 +45,11 @@ func main() {
 
 	// Pointers can also be printed
 	// It prints the memory address of the location
-	fmt.Println("pointer:", &i)
+	fmt.Println("pointer address:", &i)
+
+	// If we dereference the pointer, then it prints the value at that location
+	// This is the same as just accessing the variable directly
+	fmt.Println("pointer value:", *&i) // Same as just i
 }
 
 // FOR WINDOWS:

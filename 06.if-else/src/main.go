@@ -24,7 +24,7 @@ func main() {
 	}
 
 	// if -- else if -- else
-	// A variable can be declared in the if condition
+	// A variable can be declared and conditioned in the if condition using :=
 	// This variable will be available in subsequent statements
 	if num := 9; num < 0 {
 		fmt.Println(num, "is negative")
@@ -39,7 +39,7 @@ func main() {
 		fmt.Println("either 8 or 7 are even")
 	}
 
-	// NOTE: There is no ternary operator in Go
+	// NOTE: There is no ternary conditional operator) in Go
 }
 
 // FOR WINDOWS:

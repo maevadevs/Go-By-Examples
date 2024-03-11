@@ -28,7 +28,7 @@ func main() {
 	}
 	fmt.Println()
 
-	// Using range
+	// Using range: This is similar to Python-Style
 	fmt.Print("Using range: ")
 	for k := range 5 {
 		fmt.Print(k+1, " ")
@@ -36,6 +36,7 @@ func main() {
 	fmt.Println()
 
 	// Infinite Loop + Break
+    // Need to make sure that the break condition will be hit at some point
 	fmt.Print("Infinite Loop + Break: ")
 	l := 1
 	for {

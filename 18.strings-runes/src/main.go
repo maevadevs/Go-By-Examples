@@ -11,50 +11,11 @@ import (
 
 // Functions
 // *********
-func main() {
-	// A Go string is a read-only slice of bytes
-	// Treated as containers of text encoded in UTF-8
-	// In Go, the concept of a Character is called Rune
-	// Rune - An integer that represents a Unicode code point
-	// More Details: https://go.dev/blog/strings
-
-	// Hello in Thai
-	const greetThai = "สวัสดี"
-	fmt.Println("greetThai:", greetThai)
-
-	// Strings are equivalent to a slice []byte
-	// Produce the length of the raw bytes stored within
-	fmt.Println("Len:", len(greetThai))
-
-	// Indexing produces the raw byte values at each index
-	// Hex values of all the bytes that constitute the code points in the string
-	fmt.Print("Indexing: ")
-	for i := 0; i < len(greetThai); i++ {
-		fmt.Printf("%x ", greetThai[i])
-	}
-	fmt.Println()
-
-	// To actually get the character (Rune) in a string, we can use the utf8 package
-	// The run-time of RuneCountInString() depends on the size of the string
-	// It has to decode each UTF-8 rune sequentially
-	// Some characters are represented by multiple UTF-8 code points
-	fmt.Println("Rune count:", utf8.RuneCountInString(greetThai))
-
-	// range loop decodes each rune along with its offset in the string
-	for i, runeValue := range greetThai {
-		fmt.Printf("%#U starts at code point %d\n", runeValue, i)
-	}
-
-	// We can achieve the same operation using utf8.DecodeRuneInString()
-	fmt.Println("\nUsing DecodeRuneInString")
-	for i, w := 0, 0; i < len(greetThai); i += w {
-		runeValue, width := utf8.DecodeRuneInString(greetThai[i:])
-		fmt.Printf("%#U starts at %d\n", runeValue, i)
-		w = width
-        // This demonstrates passing a rune value to a function
-		examineRune(runeValue)
-	}
-}
+// A Go string is a read-only slice of bytes
+// Treated as containers of text encoded in UTF-8
+// In Go, the concept of a single Character is called Rune
+// Rune - An integer that represents a Unicode code-point
+// More Details: https://go.dev/blog/strings
 
 func examineRune(r rune) {
     // Values enclosed in single quotes are rune literals
@@ -64,6 +25,51 @@ func examineRune(r rune) {
     } else if r == 'ส' {
         fmt.Println("found so sua")
     }
+}
+
+// main
+// ****
+
+func main() {
+	// Hello in Thai
+	const GREET_THAI = "สวัสดี"
+	fmt.Println("GREET_THAI:", GREET_THAI)
+
+	// Strings are equivalent to a slice []byte
+	// len() produces the length of the raw bytes stored within
+	fmt.Println("Len:", len(GREET_THAI))
+
+	// Indexing produces the raw byte values at each index
+	// Hex values of all the bytes that constitute the code points in the string
+	fmt.Print("Indexing: ")
+
+	for i := 0; i < len(GREET_THAI); i++ {
+		fmt.Printf("%x ", GREET_THAI[i])
+	}
+
+	fmt.Println()
+
+	// To actually get the character (Rune) in a string, we can use the `utf8` package
+	// The run-time of RuneCountInString() depends on the size of the string
+	// It has to decode each UTF-8 rune sequentially
+	// Some characters are represented by multiple UTF-8 code points
+	fmt.Println("Rune count:", utf8.RuneCountInString(GREET_THAI))
+
+	// range-loop auto-decodes each rune to UTF-8 along with its code-point offset in the string
+	for i, runeValue := range GREET_THAI {
+		fmt.Printf("%#U starts at code point %d\n", runeValue, i)
+	}
+
+	// We can achieve the same operation using utf8.DecodeRuneInString() explicitly
+	fmt.Println("\nUsing DecodeRuneInString")
+
+	for i, w := 0, 0; i < len(GREET_THAI); i += w {
+		runeValue, width := utf8.DecodeRuneInString(GREET_THAI[i:])
+		fmt.Printf("%#U starts at %d\n", runeValue, i)
+		w = width
+        // This demonstrates passing a rune value to a function
+		examineRune(runeValue)
+	}
 }
 
 // FOR WINDOWS:

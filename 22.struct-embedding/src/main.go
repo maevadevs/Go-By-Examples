@@ -6,10 +6,19 @@ package main
 // *******
 import "fmt"
 
-// Types and Receivers
-// *******************
+// Interface
+// *********
+// This interface is implemented by base type
+
+type IDescriber interface {
+	describe() string
+}
+
+// Types
+// *****
 // Go supports embedding of structs and interfaces
 // Express a more seamless composition of types
+// The methods of the embedded also become methods of the container
 // NOTE: Not to be confused with //go:embed directive
 //  Go Directive since 1.16
 //  Embed files and folders into the application binary
@@ -18,37 +27,39 @@ type base struct {
 	num int
 }
 
+// Receivers
+// *********
+// base implements IDescriber
+
 func (b base) describe() string {
 	return fmt.Sprintf("base with num=%v", b.num)
 }
 
-// Here, type container embeds type base
+// Here, type `container` embeds type `base`
 // An embedding is like a field with type without name
+
 type container struct {
 	base
-	str string
+	name string
 }
 
-type IDescriber interface {
-	describe() string
-}
+// main
+// ****
 
-// Functions
-// *********
 func main() {
 	// When creating structs with literals, initialize the embedding explicitly
 	cont := container{
 		base: base{
 			num: 1,
 		},
-		str: "some name",
+		name: "some name",
 	}
 
 	// We can access the embedded's fields directly
-	fmt.Printf("cont={num: %v, str: %v}\n", cont.num, cont.str)
+	fmt.Printf("cont={num: %v, name: %v}\n", cont.num, cont.name)
 
-	// We can also spell out the full name
-	fmt.Printf("cont={num: %v, str: %v}\n", cont.base.num, cont.str)
+	// Or we can also spell out the full name
+	fmt.Printf("cont={num: %v, name: %v}\n", cont.base.num, cont.name)
 
 	// The methods of the embedded also become methods of the container
 	fmt.Println("describe:", cont.describe())

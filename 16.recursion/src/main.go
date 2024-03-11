@@ -8,11 +8,27 @@ import "fmt"
 
 // Functions
 // *********
+// A recursion is a function that calls itself over and over down to a base case
+
+// A recursive function that calls itself over and over until it reaches a base case.
+func factorial(n int) int {
+	// Base case
+	if n == 0 {
+		return 1
+	}
+
+	// Self-call toward the base case
+	return n * factorial(n-1)
+}
+
+// main
+// ****
+
 func main() {
 	// A recursion is a function that calls itself down to a base case
 	fmt.Printf("Factrial(10): %v\n", factorial(10))
 
-	// Closures can also be recursive,
+	// Closures can also be recursive
 	// However, it must be declared with var explicitly before it is defined
 	var fibonacci func(n int) int
 
@@ -28,16 +44,6 @@ func main() {
 
 	// Calling
 	fmt.Printf("fibonacci(20): %v\n", fibonacci(20))
-}
-
-// A recursive function that calls itself until it reach a base case.
-func factorial(n int) int {
-	// Base case
-	if n == 0 {
-		return 1
-	}
-	// Self-call toward the base case
-	return n * factorial(n-1)
 }
 
 // FOR WINDOWS:

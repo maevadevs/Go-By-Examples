@@ -8,12 +8,25 @@ import "fmt"
 
 // Functions
 // *********
+// Go functions support multiple return values
+// This is similar to tuple unpacking in Python
+// This is often used to return both value and error
+
+// A function that returns 2 integer values.
+func vals() (int, int) {
+	return 3, 7
+}
+
+// main
+// ****
+
 func main() {
+	// Declaring some integer variables
 	var a, b, c int
 
 	// Go functions support multiple return values
 	// This is similar to tuple unpacking in Python
-	// This is often used to return both value and error
+	// This is often used to return both values and errors
 	a, b = vals()
 	fmt.Println(a)
 	fmt.Println(b)
@@ -21,11 +34,6 @@ func main() {
 	// If only one value is needed, we can discard the unneeded ones
 	_, c = vals()
 	fmt.Println(c)
-}
-
-// A function that returns 2 integer values.
-func vals() (int, int) {
-	return 3, 7
 }
 
 // FOR WINDOWS:

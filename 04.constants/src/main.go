@@ -19,7 +19,7 @@ func main() {
 	// Constants are the same as variable but immutable
 	// They can appear anywhere where variables can
 	// But we cannot use walrus operator with constants
-	// Constants must be declared with their type
+	// Constants must be declared with the keyword `const` and their type
 	const PROJECT_NAME string = "Constants"
 	fmt.Println("Project name is", PROJECT_NAME)
 

@@ -10,15 +10,16 @@ import "fmt"
 // *******
 // Structs are typed collections of fields
 // Useful for grouping data together to form records
+// Similar to maps but can have different fields with data types
 
-// Struct to represent a person
+// Struct to represent a person.
 type person struct {
 	fname string
 	lname string
 	age   int
 }
 
-// Constructor function for a new person struct
+// Constructor function for a new person struct.
 func newPerson(fname string, lname string) *person {
 	// We can safely return a pointer to local variable
 	// A local variable will survive the scope of the function
@@ -31,8 +32,9 @@ func newPerson(fname string, lname string) *person {
 	return &per
 }
 
-// Functions
-// *********
+// main
+// ****
+
 func main() {
 	// Creating a new struct
 	per := person{"Bob", "Green", 20}
@@ -54,7 +56,7 @@ func main() {
 	ptrPer4 := &person{fname: "Ann", lname: "McArthur", age: 40}
 	fmt.Println(ptrPer4)
 
-	// But it is idomatic to use a constructor function instead
+	// But it is idiomatic to use a constructor function instead
 	ptrPer5 := newPerson("Jon", "Lennon")
 	fmt.Println(ptrPer5)
 
@@ -65,7 +67,7 @@ func main() {
 	// The pointers are automatically dereferenced
 	fmt.Printf("%s's age is %v\n", ptrPer4.fname, ptrPer4.age)
 
-	// Struct are mutable
+	// Structs are mutable
 	// We can change their fields's values
 	fmt.Printf("Before: %s's age is %v\n", ptrPer5.fname, ptrPer5.age)
 	ptrPer5.age = 51

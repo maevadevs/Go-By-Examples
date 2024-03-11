@@ -12,14 +12,14 @@ type rect struct {
 	width, height int
 }
 
-// Receivers
-// *********
+// Receivers/Methods
+// *****************
 // Go support methods defined on struct types
 // We call them Receiver in Go
 // They can be defined for either pointer or value receiver types
 // Go automatically handles conversion between values and pointers for method calls
 // We may want to use a pointer receiver type to avoid copying on method calls
-// or to allow the method to mutate the receiving struct
+// or to allow the method to mutate the receiving struct in memory
 
 // Receiver function to calculate the rectangle's area.
 func (r *rect) area() int {
@@ -31,8 +31,9 @@ func (r rect) perim() int {
 	return 2*r.width + 2*r.height
 }
 
-// Functions
-// *********
+// main
+// ****
+
 func main() {
 	// Go supports methods defined on struct types
 	// Initializing a rect struct
@@ -43,7 +44,7 @@ func main() {
 	fmt.Println("perim:", r.perim())
 
 	// Go automatically handles conversion between values and pointers for method calls
-	rp := &r
+    rp := &r
 	fmt.Println("area: ", rp.area())
 	fmt.Println("perim:", rp.perim())
 }

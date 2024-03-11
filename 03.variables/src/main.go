@@ -9,7 +9,7 @@ import "fmt"
 // Global Variables
 // ****************
 // This is a global variable
-// Walrus operator is not available here
+// Walrus operator is not available here: Must be declared with `var`
 var pi float64 = 3.1415
 
 // Functions
@@ -31,7 +31,7 @@ func main() {
 	fmt.Println("Count is", count)
 
 	// Type can be skipped and infered if provided during declaration
-	// However, we could loose track of the type of the variable
+	// However, we could lose track of the type of the variable as it is not explicit
 	isHuman := true
 	fmt.Println("Is he human?", isHuman)
 
