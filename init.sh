@@ -83,8 +83,8 @@ package main
 // *******
 import \"fmt\"
 
-// Functions
-// *********
+// main
+// ****
 func main() {
     fmt.Println(\"Hello world!\")
 }
