@@ -1,3 +1,3 @@
 module ralafi.com/go/go-by-examples/31.timeouts
 
-go 1.22.3
+go 1.22.6
