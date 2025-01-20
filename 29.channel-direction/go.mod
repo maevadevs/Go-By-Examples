@@ -1,3 +1,3 @@
 module ralafi.com/go/go-by-examples/29.channel-direction
 
-go 1.23.2
+go 1.23.5
