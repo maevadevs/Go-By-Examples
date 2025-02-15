@@ -1,3 +1,3 @@
 module ralafi.com/go/go-by-examples/11.range
 
-go 1.23.5
+go 1.24.0
